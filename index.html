@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the project -->
+  <title>Stop Watch</title>
+  <!-- Favicon -->
+  <link rel="icon" href="https://em-content.zobj.net/source/microsoft-teams/337/alarm-clock_23f0.png">
+  <!-- Include CSS,Bootstrap,font file for styling -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- In this div, set the background color dark -->
+  <div class="main-container">
+
+     <!--  In this div, is the container of stop watch -->
+    <div class="stop-watch-container">
+      <h3 class="txt-center p-b-25">
+				Stop Watch
+			</h3>
+        <!-- In this div, contains Hours, Minutes, Seconds, Miliseconds -->
+        <div class="stop-watch-flex p-b-33">
+            <div class="hours">
+              <span id="hours" class="rng-watch">00</span>
+              <span class="sm-text"> Hours</span>
+              
+            </div>
+            <div class="minutes">
+              <span id="minutes" class="rng-watch">00</span>
+              <span class="sm-text">Minutes</span>
+            </div>
+            <div class="seconds">
+              <span id="seconds" class="rng-watch">00</span>
+              <span class="sm-text">Seconds</span>
+            </div>
+            <div class="milisecondsv">
+              <span id="milliseconds" class="rng-watch">000</span>
+              <span class="sm-text">Miliseconds</span>
+            </div>
+        </div>
+        <!--  In this div, contains stop watch buttons -->
+        <div class="stop-watch-buttons">
+            <button class="btn-font" id="start-stop-watch"> Start </button>
+            <button class="btn-font" id="pause-stop-watch">Stop</button>
+            <button class="btn-font" id="reset-stop-watch">Reset</button>
+        </div>
+    </div>
+  </div>
+ <!-- Include the script file -->
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+/* Google fonts to display the font family */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins&family=Roboto&family=Roboto+Slab&family=Sofia+Sans:ital,wght@0,100;0,200;0,400;1,300&display=swap');
+
+*{
+  margin:0px;
+  padding: 0;
+  box-sizing: border-box;
+  border:none;
+}
+
+/* Set height,width background iaage of the web page */
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-image: url('./images/bg-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  color:black;
+  overflow: hidden;
+}
+
+/* Styling of the main container which contains the Stopwatch */
+.main-container{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Styling of the container which contains the Stopwatch */
+.stop-watch-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling of the h3 which contains the Stopwatch */
+.stop-watch-container h3{
+  font-size: 3.2rem;
+  line-height: 1.1;
+  /* color: #fff; */
+  text-transform: uppercase;
+  margin: 0 0 30px ;
+  text-shadow: 2px 2px 8px white;
+}
+
+/* Styling and positing the hours,minutes,secounds,milliseconds contianer of the stopwatch */
+.stop-watch-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+/* Styling and positing the hours,minutes,secounds,milliseconds div of the stopwatch */
+.stop-watch-flex div{
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Styling and positing the hours,minutes,secounds,milliseconds div on hover of the stopwatch */
+.stop-watch-flex div:hover{
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Styling and increase the font of the hours,minutes,secounds,milliseconds  of the stopwatch */
+.rng-watch{
+  font-size: 55px;
+  line-height: 1;
+  margin: 7px;
+  /* color: #fff; */
+}
+
+/* Styling and decrease the font of the hours,minutes,secounds,milliseconds span  of the stopwatch */
+.sm-text{
+  font-size: 12px;
+  line-height: 1.2;
+  color: #f5341a;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing:1px;
+}   
+
+/* Styling the button of the stopwatch */
+.stop-watch-buttons button{
+  color: white;
+  background-color: #f45c48;
+  border-radius: 27px;
+  min-width: 91px;
+  border: none;
+  margin-right: 15px;
+  box-shadow: 2px 2px 8px black;
+  letter-spacing:2px;
+}
+
+/* Styling on hover effect of the button in  the stopwatch */
+.stop-watch-buttons button:hover{
+  background-color: #f45c48;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  border:none
+}
+
+/* Styling while button is active in the stopwatch */
+.stop-watch-buttons button:active{
+  background-color: #f5341a;
+  cursor: pointer;
+  border:none;
+  transform: scale(1.1);  
+}
+
+/* Styling the font-size of the button in the stopwatch */
+.btn-font{
+  padding: 9px 0 11px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
