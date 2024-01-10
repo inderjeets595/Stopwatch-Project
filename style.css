@@ -20,7 +20,6 @@ body{
   background-size: cover;
   transition: all 0.5s ease-in-out;
   color:black;
-  overflow: hidden;
 }
 
 /* Styling of the main container which contains the Stopwatch */
@@ -32,6 +31,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 /* Styling of the container which contains the Stopwatch */
@@ -137,3 +137,20 @@ body{
   font-weight: 600;
 }
 
+@media screen and (max-width: 600px) {
+
+  body {
+    background-image: url('./images/bg-mobile.jpg');
+    background-size:auto;
+  }
+
+  .stop-watch-buttons{
+    margin:-8px 0 18px 0px;
+  }
+
+  .stop-watch-container h3{
+     margin:8px;
+  }
+
+
+}
